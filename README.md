@@ -1,90 +1,202 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Project planning and documentation for MicroSavvy
+# MicroSavvy — Scholarship-based Microsoft basics training
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+MicroSavvy is a scholarship initiative by AnojmaTech that empowers learners with accessible, beginner-friendly training in Microsoft Word, Excel, PowerPoint, and Outlook. The program is strictly virtual, focuses on practical basics (not advanced features), and awards certification upon successful completion.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
-
----
-
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
-
-Before you write any code, take time to plan:
-
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
-
-**Goal:** Show intentional structure and user journey across the site.
+- Live site: https://microsavvy.netlify.app
+- Repository: https://github.com/Ojutiwon-Anuoluwapo/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl
 
 ---
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+## 1) Purpose, objectives, and scope
 
-Using your plan, begin building:
+**Purpose:** Provide a clear, friendly onboarding experience for scholarship learners to understand the program, select a course, and register easily.
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+**Objectives:**
+- **Accessibility:** Lower barriers to digital literacy with a scholarship format and clear expectations.
+- **Clarity:** Communicate that training is introductory, not in-depth.
+- **Ease of registration:** Embed a Google Form so learners can register and upload certification payment proof.
+- **Trust:** Present professional branding, consistent UI, and a concise learner journey.
 
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
-
----
-
-## 🛠️🚀 Part 3: Best Practices for Code Organization
-
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+**Scope:**
+- **Introductory only:** Practical basics, foundational skills (no advanced analytics, macros, or complex automation).
+- **Virtual delivery:** Evening classes; learners provide their own internet access.
+- **Certification fee:** Flat fee on completion; scholarship covers tuition.
 
 ---
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+## 2) Target audience and success criteria
 
-Once your project is complete, choose a method to **host your site online**.
+**Audience:** Beginners and scholarship recipients seeking essential Microsoft skills for school, entry-level jobs, or community programs.
 
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
+**Success criteria:**
+- **Discoverability:** Users immediately grasp what MicroSavvy offers and that it’s introductory.
+- **Conversion:** Registration flow is smooth; form completion without confusion.
+- **Consistency:** Uniform header/footer, colors, and navigation across all pages.
+- **Responsiveness:** Mobile-friendly layouts; readable on low-end devices.
 
 ---
 
-## Deliverables
+## 3) Information architecture and pages
 
-1. A GitHub repository containing:
+**Site map:**
+- **Home (index.html):** Hero, brief mission, call-to-action to view courses and register.
+- **About (about.html):** Scholarship goal, how it works, schedule, certification details, FAQs.
+- **Courses (courses.html):** Course cards (Word, Excel, PowerPoint, Outlook), Register Now button + embedded Google Form.
+- **Contact (contact.html):** WhatsApp button, email link, optional embedded contact form.
 
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+**Navigation flow:**
+- **Entry:** Home → Courses
+- **Decision:** Courses → Register (Google Form) → Confirmation
+- **Support:** Contact available at all times from navbar/footer.
 
 ---
 
-## Outcome
+## 4) Content outlines
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+**Home:**
+- **Hero:** Brand statement, scholarship mission, “Explore Courses” button.
+- **Highlights:** Introductory scope, evening classes, certification fee note.
+- **CTA:** Register Now (links to Google Form).
+
+**About:**
+- **Scholarship goal:** Accessibility, community impact.
+- **Expectations:** Introductory only; what’s included vs. not included.
+- **Delivery:** Virtual, evenings; learners bring data.
+- **Certification:** Criteria and fee.
+- **FAQs:** Common questions on schedule, tech requirements, and support.
+
+**Courses:**
+- **Course cards:** Short descriptions focused on basics.
+- **Registration:** Direct button + embedded form for seamless flow.
+
+**Contact:**
+- **WhatsApp:** Quick question link.
+- **Email:** mailto link with prefilled subject.
+- **Optional form:** Google Form embed for messages.
+
+---
+
+## 5) Design system and branding
+
+**Colors:**
+- **Primary:** Navy `#1A2D4D`
+- **Accent:** Emerald `#2FAE66`
+- **Background:** Light gray/white `#f9f9f9`
+- **Text:** Default navy `#1A2D4D`
+
+**Typography:**
+- **Headings:** Bold, clean sans-serif (e.g., Inter, Poppins, or system fonts).
+- **Body:** High contrast, 16–18px base, 1.5 line-height.
+
+**Logo sizing:**
+- **Desktop:** Height ~50px, width auto, max-width 180–200px.
+- **Mobile:** Height ~40px via media query.
+
+**Components:**
+- **Buttons:** Solid accent, hover state slightly darker or change to accent.
+- **Cards:** Light background, subtle shadow, clear hierarchy.
+
+---
+
+## 6) Technical stack and structure
+
+**Stack:** HTML5, CSS3, vanilla JS, Google Forms (registration), Netlify (deployment).
+
+**Structure:**
+```
+microsavvy/
+├── index.html
+├── about.html
+├── courses.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── images/
+    └── logo.png
+```
+
+**Paths:** Use relative paths (e.g., `images/logo.png`, `css/style.css`) to ensure assets load on deployment.
+
+---
+
+## 7) Interactivity and accessibility
+
+**Interactivity:**
+- **Explore Courses button:** Smooth scroll or navigation.
+- **Registration:** Google Form embed + external “Register Now” link.
+- **Contact actions:** WhatsApp and email launch.
+
+**Accessibility:**
+- **Alt text:** Informative alt for images (e.g., “MicroSavvy logo”).
+- **Color contrast:** Ensure WCAG-friendly contrast (navy/white).
+- **Keyboard navigation:** Focus states on links and buttons.
+- **Semantic HTML:** `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`.
+
+---
+
+## 8) Testing and QA checklist
+
+**Functional:**
+- **Links:** All pages navigate correctly.
+- **Images:** Logo and assets render everywhere.
+- **Form:** Google Form opens and embeds correctly.
+
+**Responsive:**
+- **Mobile:** Check 360–414px widths.
+- **Tablet:** Check ~768px.
+- **Desktop:** Check 1280px+.
+
+**Performance:**
+- **Images:** Compressed assets.
+- **CSS/JS:** Minimize unused code.
+
+**Accessibility:**
+- **Alt text:** Present and meaningful.
+- **Focus states:** Visible.
+- **Headings:** Logical order (H1→H2→H3).
+
+---
+
+## 9) Deployment instructions
+
+**Netlify (recommended):**
+1. **Drag-and-drop:** Upload the project folder to Netlify dashboard for instant deploy.
+2. **Git integration:** Import from GitHub; auto-deploy on push.
+3. **Domain:** Customize site name; add a custom domain if available.
+4. **Verify:** Test on phone/laptop; confirm HTTPS padlock.
+
+Alternative options: GitHub Pages, Vercel (if moving to Next.js later).
+
+---
+
+## 10) Maintenance plan and roadmap
+
+**Routine updates:**
+- **Content:** Batch times, course availability, FAQ adjustments.
+- **Form:** Update Google Form link if changed.
+- **Branding:** Iterative improvements to visuals.
+
+**Future upgrades:**
+- **Advanced modules:** Offer follow-on courses.
+- **Custom registration:** Move from Google Forms to a lightweight backend if needed.
+- **Analytics:** Track visits and conversion to registrations.
+
+---
+
+## 11) Risks and mitigations
+
+**Broken asset paths:** Use relative paths and verify after deploy.
+**Expectations mismatch:** Prominent “introductory only” notice on Home, About, and Courses.
+**Form changes:** Keep a short URL and test embeds after edits.
+**Support load:** Provide clear WhatsApp/email contact; set response expectations.
+
+---
+
+## 12) Changelog
+
+- **v1.0:** Initial multipage site with scholarship description, Google Form registration, responsive header, and contact actions.
+- **v1.1 (planned):** Add FAQs, hover states for nav, refine mobile spacing, compress images.
+```
