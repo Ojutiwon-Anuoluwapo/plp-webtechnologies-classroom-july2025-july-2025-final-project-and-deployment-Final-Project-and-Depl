@@ -107,7 +107,7 @@ body {
 
 /* Logo sizing */
 .logo {
-  height: 50px;   /* visible but not excessive */
+  height: 55px;   /* visible but not excessive */
   width: auto;    /* keeps proportions */
   max-width: 180px; /* prevents it from stretching too wide */
 }
